@@ -56,29 +56,29 @@ export const SKILLS_DATA: IFilterSkills[] = [{
     icon: 'material-symbols-light:square-outline'
 }]
 
-export const CARD_DATA: ICourse[] = [{
+export const COURSES_DATA: ICourse[] = [{
     title: 'Английский шаг за шагом:',
     level: 'Базовый уровень',
     speaker: 'Полина Коваленко',
     price: 2940,
     old_price: 6000,
-    currency: '&#8381;',
+    currency: '\u20bd',
     sale: '-51%',
     icon: '/english-flag.svg',
-    img: '/girl1',
+    img: '/girl1.svg',
     background: '/A-Z.svg'
 },
     {
         title: 'Английский шаг за шагом:',
-        level: 'Базовый уровень',
+        level: 'Вводно-фонетический курс',
         speaker: 'Полина Коваленко',
         price: 2940,
         old_price: 6000,
-        currency: '&#8381;',
+        currency: '\u20bd',
         sale: '-51%',
         icon: '/english-flag.svg',
-        img: '/girl1',
-        background: '/A-Z.svg'
+        img: '/girl2.svg',
+        background: '/ae.svg'
     },
     {
         title: 'Английский шаг за шагом:',
@@ -86,22 +86,22 @@ export const CARD_DATA: ICourse[] = [{
         speaker: 'Полина Коваленко',
         price: 2940,
         old_price: 6000,
-        currency: '&#8381;',
+        currency: '\u20bd',
         sale: '-51%',
         icon: '/english-flag.svg',
-        img: '/girl1',
+        img: '/girl1.svg',
         background: '/A-Z.svg'
     },
     {
         title: 'Английский шаг за шагом:',
-        level: 'Базовый уровень',
+        level: 'Вводно-фонетический курс',
         speaker: 'Полина Коваленко',
         price: 2940,
         old_price: 6000,
-        currency: '&#8381;',
+        currency: '\u20bd',
         sale: '-51%',
         icon: '/english-flag.svg',
-        img: '/girl1',
-        background: '/A-Z.svg'
+        img: '/girl2.svg',
+        background: '/ae.svg'
     }
 ]

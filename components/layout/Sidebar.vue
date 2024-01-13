@@ -38,8 +38,6 @@ const durationsValue = ref('6')
 </template>
 
 <style scoped lang="scss">
-@import "/assets/scss/_colors";
-
 .container_aside {
   margin-top: 3.7rem; /* 100/18 */
   font-style: normal;

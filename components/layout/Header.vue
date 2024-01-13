@@ -1,6 +1,3 @@
-<script setup lang="ts">
-
-</script>
 
 <template>
   <header class="container">
@@ -31,7 +28,8 @@
 <style scoped lang="scss">
 
 .container {
-  width: 64.544rem; /* 1160/18 */;
+  width: 64.544rem; /* 1160/18 */
+;
   margin: 2.2rem auto 0 auto;
   display: flex;
   justify-content: space-between;
@@ -43,14 +41,17 @@
   }
 
   .nav {
-    margin-left: 15.678rem  /* 248/18 */;
+    margin-left: 15.678rem /* 248/18 */
+  ;
+
     .nav_list {
       list-style: none;
       display: flex;
       gap: 4.038rem;
       font-weight: 500;
       line-height: 120%; /* 21.6px */
-      letter-spacing: 0.01rem  /* 0.18/18 */;
+      letter-spacing: 0.01rem /* 0.18/18 */
+    ;
     }
 
     .activ_link {
@@ -58,12 +59,11 @@
     }
   }
 
-
   .user_block {
     display: flex;
     gap: 1.313rem;
     align-items: center;
-    width: 10.022rem  /* 175/18 */;
+    width: 10.022rem;
   }
 
   .find {
@@ -74,8 +74,8 @@
     cursor: pointer;
 
     img {
-      width: 1.722rem  /* 31/18 */;
-      height: 1.722rem  /* 31/18 */;
+      width: 1.722rem;
+      height: 1.722rem;
     }
   }
 
@@ -90,7 +90,7 @@
     height: 1.375rem;
     font-weight: 600;
     line-height: 120%; /* 21.6px */
-    letter-spacing: 0.01rem  /* 0.18/18 */;
+    letter-spacing: 0.01rem;
     cursor: pointer;
   }
 }

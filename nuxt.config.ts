@@ -5,6 +5,9 @@ export default defineNuxtConfig({
             Mulish: {
                 wdht: [500, 600, 800]
             },
+            Montserrat: {
+                wdht: [600]
+            }
         }
     }], '@nuxt/image', 'nuxt-icon'],
     css: ['~/assets/scss/main.scss'],
