@@ -1,19 +1,19 @@
 
 <template>
-  <header class="container">
+  <header class="header_container">
     <NuxtLink to="/" class="logo">
-      <NuxtImg src="/logo.svg"></NuxtImg>
+      <img src="/logo.svg" alt="logo">
     </NuxtLink>
     <nav class="nav">
       <ul class="nav_list">
-        <li class="activ_link">Курсы</li>
-        <li>Статьи</li>
-        <li>Вопросы</li>
+        <li class="activ_link"><NuxtLink to="/courses">Курсы</NuxtLink></li>
+        <li><NuxtLink href="/articles">Статьи</NuxtLink></li>
+        <li><NuxtLink href="questions">Вопросы</NuxtLink></li>
       </ul>
     </nav>
     <div class="user_block">
       <button class="find">
-        <NuxtImg src="/search.svg"></NuxtImg>
+        <img src="/search.svg" alt="search">
       </button>
       <Icon
           class="icon_user"
@@ -27,9 +27,7 @@
 
 <style scoped lang="scss">
 
-.container {
-  width: 64.544rem; /* 1160/18 */
-;
+.header_container {
   margin: 2.2rem auto 0 auto;
   display: flex;
   justify-content: space-between;
@@ -45,7 +43,6 @@
   ;
 
     .nav_list {
-      list-style: none;
       display: flex;
       gap: 4.038rem;
       font-weight: 500;
@@ -95,3 +92,5 @@
   }
 }
 </style>
+<script setup lang="ts">
+</script>

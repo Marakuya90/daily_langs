@@ -13,7 +13,7 @@ import {COURSES_DATA} from "~/components/layout/filter.data";
         <span class="course_title yellow"> {{ item.level }}</span>
         <div class="course_speaker">
           <div><span>{{ item.speaker }}</span></div>
-          <img src="/Polygon%201.svg" alt="polygon">
+          <img src="/design_elem.svg" alt="polygon">
         </div>
         <div class="price">
           <span class="main_price">{{ item.price }}{{ item.currency }}</span>

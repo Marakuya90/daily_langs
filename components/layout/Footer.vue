@@ -7,10 +7,10 @@
     <div class="footer">
     <div class="footer_main">
       <ul class="footer_link">
-        <li><a href="">Политика конфиденциальности</a></li>
-        <li><a href="">Условия пользования</a></li>
+        <li><NuxtLink to="/policy">Политика конфиденциальности</NuxtLink></li>
+        <li><NuxtLink to="/terms">Условия пользования</NuxtLink></li>
       </ul>
-    <NuxtImg src="/logo.svg"></NuxtImg>
+    <img src="/logo_white.svg" alt="logo">
     </div>
     <span>&#169;DailyLangs | 2023. Все права защищены</span>
     </div>
@@ -21,10 +21,18 @@
 .footer {
   height: 13.333rem;
   background-color: $primary;
+  &_main {
+    display: flex;
+    justify-content: space-between;
+    width: 64.444rem;
+    margin: 0 auto;
+    padding: 3.056rem 0 2.879rem 0 ;
+  }
+  &_logo {
+    fill: #FFFFFF;
+  }
+  &_link {
+  }
 }
-.footer_main {
-  display: flex;
-  justify-content: space-between;
 
-}
 </style>

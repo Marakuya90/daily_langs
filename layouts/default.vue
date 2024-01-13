@@ -1,50 +1,61 @@
 <script setup lang="ts">
 
 </script>
-
+<!--убрать sidebar поставить по дефолту страницу с курсами-->
 <template>
+  <div class="main_layout">
   <div class="design_background">
-    <img class="ellipse_design background_design" src="/ellipse.svg" alt="ellipse">
-    <img class="lines_design background_design" src="/lines.svg" alt="ellipse">
-    <img class="star_design background_design" src="/star.svg" alt="ellipse">
-    <div class="layout_container">
-      <LayoutHeader></LayoutHeader>
-      <div class="container">
-        <LayoutSidebar/>
-        <slot/>
+    <img class="ellipse_design" src="/ellipse.svg" alt="ellipse">
+    <img class="lines_design" src="/lines.svg" alt="ellipse">
+    <img class="star_design" src="/star.svg" alt="ellipse">
+      <div class="layout_container">
+        <LayoutHeader></LayoutHeader>
+        <div class="container_grid">
+          <LayoutSidebar/>
+          <slot/>
+        </div>
       </div>
+      <LayoutFooter></LayoutFooter>
     </div>
-    <LayoutFooter></LayoutFooter>
   </div>
 </template>
 
 <style lang="scss">
+.main_layout {
+  width: 1400px;
+  margin: 0 auto;
+}
+
 .design_background {
   position: relative;
   overflow: hidden;
-  .background_design {
-    position: absolute;
-  }
+
   .ellipse_design {
-    right: -3.056rem;
+    position: absolute;
+    right: -5.056rem;
     top: 11.333rem;
   }
+
   .lines_design {
-    bottom: 16.389rem;
-    left: 4rem;
+    position: absolute;
+    bottom: 16.489rem;
+    left: 2.1rem;
   }
+
   .star_design {
-    bottom: 19.444rem;
-    right: 3.444rem;
+    position: absolute;
+    right: 26px;
+    bottom: 343px;
   }
+
   .layout_container {
     width: 64.444rem;
     margin: 0 auto;
   }
 }
-.container {
+
+.container_grid {
   display: grid;
   grid-template-columns: 1fr 2.87fr;
-
 }
 </style>

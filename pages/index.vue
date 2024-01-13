@@ -10,7 +10,7 @@ useSeoMeta({
       <h1 class="main_label_fonts">Курсы</h1>
       <div class="yellow_fonts"><span class="main_label_fonts">английского языка</span></div>
     </div>
-    <div class="main_container_grid">
+    <div class="course_container_grid">
       <LayoutCourse/>
     </div>
   </div>
@@ -18,8 +18,8 @@ useSeoMeta({
 
 <style scoped lang="scss">
 .main {
-  margin-top: 1.8rem  /* 27/18 */;
-  height: 56.111rem;
+  margin-top: 3rem;
+  height: 55.1rem;
 
   .main_label {
     display: flex;
@@ -45,8 +45,8 @@ useSeoMeta({
     }
   }
 
-  .main_container_grid {
-    margin-top: 2.178rem;  /* 59/18 */
+  .course_container_grid {
+    margin-top: 3.378rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
