@@ -31,26 +31,26 @@
 <style scoped lang="scss">
 
 .container {
-  width: 1160px;
-  margin: 3rem auto 0 auto;
+  width: 64.544rem; /* 1160/18 */;
+  margin: 2.2rem auto 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   .logo img {
-    width: 13.938rem;
+    width: 12.438rem;
     height: 2.688rem;
   }
 
   .nav {
+    margin-left: 15.678rem  /* 248/18 */;
     .nav_list {
       list-style: none;
       display: flex;
-      gap: 4.438rem;
-      font-size: 18px;
+      gap: 4.038rem;
       font-weight: 500;
       line-height: 120%; /* 21.6px */
-      letter-spacing: 0.18px;
+      letter-spacing: 0.01rem  /* 0.18/18 */;
     }
 
     .activ_link {
@@ -63,6 +63,7 @@
     display: flex;
     gap: 1.313rem;
     align-items: center;
+    width: 10.022rem  /* 175/18 */;
   }
 
   .find {
@@ -73,24 +74,23 @@
     cursor: pointer;
 
     img {
-      width: 100%;
-      height: 100%;
+      width: 1.722rem  /* 31/18 */;
+      height: 1.722rem  /* 31/18 */;
     }
   }
 
   .icon_user {
-    width: 3.188rem;
-    height: 3.188rem;
+    width: 3.488rem;
+    height: 3.488rem;
     color: $primary;
   }
 
   .select_user {
     border: none;
     height: 1.375rem;
-    font-size: 18px;
     font-weight: 600;
     line-height: 120%; /* 21.6px */
-    letter-spacing: 0.18px;
+    letter-spacing: 0.01rem  /* 0.18/18 */;
     cursor: pointer;
   }
 }

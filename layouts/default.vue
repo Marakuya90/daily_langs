@@ -16,7 +16,7 @@
 <style lang="scss">
 .container {
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 1fr 2.9fr;
   width: 1160px;
   margin: 0 auto;
 }
