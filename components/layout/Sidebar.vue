@@ -98,4 +98,9 @@ const durationsValue = ref('6')
 .aside_title {
   font-weight: 600;
 }
+@media (max-width: 393px) {
+  .container_aside{
+    display: none;
+  }
+}
 </style>

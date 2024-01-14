@@ -1,7 +1,6 @@
 <script setup lang="ts">
 
 </script>
-<!--убрать sidebar поставить по дефолту страницу с курсами-->
 <template>
   <div class="main_layout">
     <div class="design_background">
@@ -49,6 +48,20 @@
   .layout_container {
     width: 64.444rem;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 393px) {
+  .main_layout {
+    width: 21.833rem;
+  }
+  .ellipse_design, .lines_design {
+    display: none;
+  }
+  .design_background{
+    .layout_container {
+      width: 20.278rem;
+    }
   }
 }
 
