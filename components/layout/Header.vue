@@ -6,7 +6,9 @@
     </NuxtLink>
     <nav class="nav">
       <ul class="nav_list">
-        <li class="activ_link"><NuxtLink to="/courses">Курсы</NuxtLink></li>
+        <li class="activ_link">
+          <NuxtLink to="/courses">Курсы</NuxtLink>
+        </li>
         <li><NuxtLink href="/articles">Статьи</NuxtLink></li>
         <li><NuxtLink href="questions">Вопросы</NuxtLink></li>
       </ul>
@@ -18,8 +20,8 @@
       <Icon
           class="icon_user"
           name="mingcute:user-4-fill"></Icon>
-      <select class="select_user">
-        <option>RU</option>
+      <select class="select_user" id="select_user">
+        <option id="ru" name="ru">RU</option>
       </select>
     </div>
   </header>

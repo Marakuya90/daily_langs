@@ -11,8 +11,8 @@ const durationsValue = ref('6')
       <div class="duration container_filter">
         <span class="durations_title aside_title">Продолжительность</span>
         <div>
-          <label for="durations_range">От 1 до {{ durationsValue }} мес.</label>
-          <input type="range" min="1" max="6" step="1" v-model="durationsValue" name="durations_range">
+          <label for="durations_range" id="durations_label">От 1 до {{ durationsValue }} мес.</label>
+          <input type="range" min="1" max="6" step="1" v-model="durationsValue" name="durations_range" id="durations_range">
         </div>
       </div>
       <div class="level container_filter">
