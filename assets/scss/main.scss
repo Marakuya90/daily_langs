@@ -2,28 +2,41 @@
   box-sizing: border-box;
   font-size: 18px;
 }
+
 body {
   font-family: 'Mulish', sans-serif;
   font-size: 18px;
   font-weight: 500;
   margin: 0;
 }
-h1,p,span {
+
+h1, p, span {
   margin: 0;
   padding: 0;
 }
+
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 button, a {
   cursor: pointer;
 }
+
 .main {
   margin-top: 3rem;
   height: 55.1rem;
+}
+
+@media (max-width: 393px) {
+  .main {
+    margin-top: 1.722rem;
+    height: 53.667rem;
+  }
 }

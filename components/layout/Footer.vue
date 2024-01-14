@@ -21,7 +21,6 @@
           <span>&#169;DailyLangs | 2023. Все права защищены</span>
         </div>
       </div>
-
     </div>
   </footer>
 </template>
@@ -53,17 +52,39 @@
 
     li a {
       color: #FFF;
-      line-height: 120%; /* 21.6px */
-      letter-spacing: 0.18px;
+      @include font_settings;
     }
   }
 
-  &_rights{
+  &_rights {
     margin-top: 54px;
     text-align: center;
     color: #FFF;
-    line-height: 120%; /* 21.6px */
-    letter-spacing: 0.18px;
+    @include font_settings;
+  }
+}
+
+@media (max-width: 393px) {
+  * {
+    font-size: 14px;
+  }
+  .footer {
+    height: 9.056rem;
+
+    &_main {
+      width: 21.833rem;
+      padding: 1rem 0.833rem 1.722rem 0.833rem;
+    }
+
+    img {
+      width: 6.944rem;
+      height: 1.389rem;
+    }
+
+    &_rights {
+      margin-top: 1.556rem;
+      letter-spacing: 0.14px;
+    }
   }
 }
 

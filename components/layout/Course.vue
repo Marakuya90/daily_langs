@@ -39,6 +39,7 @@ import {COURSES_DATA} from "~/components/layout/filter.data";
 </template>
 
 <style scoped lang="scss">
+
 .courses {
   display: flex;
   flex-direction: column;
@@ -85,10 +86,8 @@ import {COURSES_DATA} from "~/components/layout/filter.data";
 }
 
 .course_speaker {
-  margin-top: 1.111rem /* 20/18 */
-;
-  margin-left: 4.444rem /* 80/18 */
-;
+  margin-top: 1.111rem;
+  margin-left: 4.444rem;
   position: relative;
   align-self: center;
 
@@ -96,31 +95,24 @@ import {COURSES_DATA} from "~/components/layout/filter.data";
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10.222rem /* 184/18 */
-  ;
-    height: 1.778rem /* 32/18 */
-  ;
+    width: 10.222rem;
+    height: 1.778rem;
     background: $yellow_green;
-    border-radius: 3.333rem /* 60/18 */
-  ;
+    border-radius: 3.333rem;
   }
 
   span {
     font-family: Montserrat, sans-serif;
-    font-size: 0.778rem /* 14/18 */
-  ;
+    font-size: 0.778rem;
     font-weight: 600;
     line-height: 150%; /* 21px */
-    letter-spacing: 0.008rem /* 0.14/18 */
-  ;
+    letter-spacing: 0.008rem;
   }
 
   img {
     position: absolute;
-    bottom: -1rem /* -18/18 */
-  ;
-    left: -0.722rem /* -13/18 */
-  ;
+    bottom: -1rem;
+    left: -0.722rem;
     z-index: 3;
   }
 }
@@ -133,14 +125,14 @@ import {COURSES_DATA} from "~/components/layout/filter.data";
   line-height: 120%; /* 48px */
   letter-spacing: 0.4px;
   align-items: flex-end;
-  margin-top: 63px;
+  margin-top: 3.5rem;
 
   .main_price {
     font-size: 2.222rem;
     font-weight: 800;
     width: 6.778rem;
     display: block;
-    margin-right: 58px;
+    margin-right: 3.222rem;
   }
 
   .container_position {
@@ -164,17 +156,14 @@ import {COURSES_DATA} from "~/components/layout/filter.data";
     height: 1rem;
     border-radius: 199px;
     background: $pink;
-    display: flex;
-    justify-content: center;
     align-self: end;
-    align-items: center;
+    @include flex-center;
 
     span {
       font-size: 10px;
       font-weight: 600;
     }
   }
-
 }
 
 .footer_card {
@@ -184,7 +173,6 @@ import {COURSES_DATA} from "~/components/layout/filter.data";
   gap: 45px;
 
   span {
-    font-weight: 500;
     line-height: 120%;
     letter-spacing: 0.01rem;
     color: #FFF;
@@ -204,6 +192,59 @@ import {COURSES_DATA} from "~/components/layout/filter.data";
   .course_link {
     padding-top: 28px;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 393px) {
+  .courses {
+    width: 20.278rem;
+    height: 16.833rem;
+  }
+  .courses:nth-child(even) {
+    display: none;
+  }
+  .course_title {
+    font-size: 1rem;
+    letter-spacing: 0.18px;
+  }
+  .course_speaker div {
+    width: 9.53rem;
+    height: 1.473rem;
+  }
+  span {
+    font-size: 0.667rem;
+  }
+  .price {
+    margin-top: 1.86rem;
+    .main_price {
+      font-size: 2rem;
+      letter-spacing: 0.36px;
+      margin-right: 1.2rem;
+    }
+    .old_price {
+      font-size: 1rem;
+    }
+    .sale {
+      width: 2.111rem;
+      height: 0.778rem;
+      span {
+        font-size: 0.444rem;
+      }
+    }
+  }
+  .footer_card {
+    gap: 0.778rem;
+    margin-top: 1.667rem;
+    span {
+      font-size: 0.778rem;
+    }
+    .course_link {
+      padding: 0;
+    }
+    .country_flag {
+      width: 2.889rem;
+      height: 2.889rem;
+    }
   }
 }
 </style>

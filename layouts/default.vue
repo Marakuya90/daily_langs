@@ -41,8 +41,8 @@
 
   .star_design {
     position: absolute;
-    right: 26px;
-    bottom: 343px;
+    right: 1.444rem;
+    bottom: 19.056rem;
   }
 
   .layout_container {
@@ -58,7 +58,15 @@
   .ellipse_design, .lines_design {
     display: none;
   }
-  .design_background{
+
+  .design_background {
+    .star_design {
+      right: 0.778rem;
+      top: 5.222rem;
+      width: 5.222rem;
+      height: 5.222rem;
+    }
+
     .layout_container {
       width: 20.278rem;
     }

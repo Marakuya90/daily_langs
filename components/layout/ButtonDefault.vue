@@ -14,7 +14,6 @@
 
 <style scoped lang="scss">
 .container_btn {
-
   .default_btn {
     width: 200px;
     height: 51px;
@@ -22,13 +21,25 @@
     border: none;
     border-radius: 100px;
     background: $primary;
-    font-weight: 500;
-    line-height: 120%; /* 21.6px */
-    letter-spacing: 0.18px;
+    @include font_settings;
   }
 
   .icon_btn {
-    font-size: 2.144rem  /* 35/18 */;
+    font-size: 2.144rem;
+  }
+}
+
+@media (max-width: 393px) {
+  .container_btn {
+    .default_btn {
+      width: 8.556rem;
+      height: 2.389rem;
+      font-size: 14px;
+    }
+
+    .icon_btn {
+      font-size: 1.222rem;
+    }
   }
 }
 </style>

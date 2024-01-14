@@ -48,37 +48,38 @@ const durationsValue = ref('6')
 .container_aside {
   margin-top: 0.7rem; /* 100/18 */
   font-style: normal;
-  font-weight: 500;
   line-height: 120%; /* 21.6px */
   letter-spacing: 0.01rem;
 
   .filters {
-    margin-top: 4.222rem;  /* 76/18 */
+    margin-top: 4.222rem; /* 76/18 */
   }
+
   .container_filter {
     @include flex-column;
     gap: 1.667rem;
   }
+
   .filter_flex {
     @include flex-column;
     gap: 0.66rem;
   }
 
-  input[type=range]  {
+  input[type=range] {
     width: 10.5rem;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
   }
+
   input[type=range]::-webkit-slider-runnable-track {
     height: 0.083rem;
     background-color: $primary;
   }
+
   input[type=range]::-webkit-slider-thumb {
-    background: $primary;
-    border-radius: 10px;
-    cursor: pointer;
-    width:14px;
+    @include circle_switcher;
+    width: 14px;
     height: 14px;
     -webkit-appearance: none;
     margin-top: -6px;
@@ -88,18 +89,18 @@ const durationsValue = ref('6')
     height: 0.083rem;
     background-color: $primary;
   }
+
   input[type=range]::-moz-range-thumb {
-    background: $primary;
-    border-radius: 10px;
-    cursor: pointer;
+    @include circle_switcher;
   }
 }
 
 .aside_title {
   font-weight: 600;
 }
+
 @media (max-width: 393px) {
-  .container_aside{
+  .container_aside {
     display: none;
   }
 }
