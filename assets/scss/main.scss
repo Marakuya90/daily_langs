@@ -17,8 +17,13 @@ ul {
   margin: 0;
   padding: 0;
 }
-
 a {
   text-decoration: none;
+}
+button, a {
   cursor: pointer;
+}
+.main {
+  margin-top: 3rem;
+  height: 55.1rem;
 }

@@ -46,7 +46,7 @@ const durationsValue = ref('6')
 
 <style scoped lang="scss">
 .container_aside {
-  margin-top: 3.7rem; /* 100/18 */
+  margin-top: 0.7rem; /* 100/18 */
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 21.6px */
@@ -63,10 +63,35 @@ const durationsValue = ref('6')
     @include flex-column;
     gap: 0.66rem;
   }
-  .durations_flex {
-    input {
-      width: 10.5rem;
-    }
+
+  input[type=range]  {
+    width: 10.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 0.083rem;
+    background-color: $primary;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    background: $primary;
+    border-radius: 10px;
+    cursor: pointer;
+    width:14px;
+    height: 14px;
+    -webkit-appearance: none;
+    margin-top: -6px;
+  }
+
+  input[type=range]::-moz-range-track {
+    height: 0.083rem;
+    background-color: $primary;
+  }
+  input[type=range]::-moz-range-thumb {
+    background: $primary;
+    border-radius: 10px;
+    cursor: pointer;
   }
 }
 

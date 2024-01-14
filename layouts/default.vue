@@ -4,16 +4,13 @@
 <!--убрать sidebar поставить по дефолту страницу с курсами-->
 <template>
   <div class="main_layout">
-  <div class="design_background">
-    <img class="ellipse_design" src="/ellipse.svg" alt="ellipse">
-    <img class="lines_design" src="/lines.svg" alt="ellipse">
-    <img class="star_design" src="/star.svg" alt="ellipse">
+    <div class="design_background">
+      <img class="ellipse_design" src="/ellipse.svg" alt="ellipse">
+      <img class="lines_design" src="/lines.svg" alt="ellipse">
+      <img class="star_design" src="/star.svg" alt="ellipse">
       <div class="layout_container">
         <LayoutHeader></LayoutHeader>
-        <div class="container_grid">
-          <LayoutSidebar/>
-          <slot/>
-        </div>
+        <slot/>
       </div>
       <LayoutFooter></LayoutFooter>
     </div>
@@ -21,6 +18,7 @@
 </template>
 
 <style lang="scss">
+
 .main_layout {
   width: 1400px;
   margin: 0 auto;
@@ -54,8 +52,4 @@
   }
 }
 
-.container_grid {
-  display: grid;
-  grid-template-columns: 1fr 2.87fr;
-}
 </style>
