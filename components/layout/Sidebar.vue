@@ -10,14 +10,21 @@ const durationsValue = ref('6')
     <div class="filters container_filter">
       <div class="duration container_filter">
         <span class="durations_title aside_title">Продолжительность</span>
-        <div>
+        <div class="durations_flex filter_flex">
           <label for="durations_range" id="durations_label">От 1 до {{ durationsValue }} мес.</label>
-          <input type="range" min="1" max="6" step="1" v-model="durationsValue" name="durations_range" id="durations_range">
+          <input
+              type="range"
+              min="1"
+              max="6"
+              step="1"
+              v-model="durationsValue"
+              name="durations_range"
+              id="durations_range">
         </div>
       </div>
       <div class="level container_filter">
         <span class="level_title aside_title">Сложность</span>
-        <div>
+        <div class="filter_flex">
           <div v-for="item in LEVEL_DATA" :key=item.name>
             <input type="radio" name="level" :id="item.name" :value="item.name" :checked="item.check">
             <label :for="item.name">{{ item.name }}</label>
@@ -26,7 +33,7 @@ const durationsValue = ref('6')
       </div>
       <div class="skills container_filter">
         <span class="skills_title aside_title">Навыки</span>
-        <div>
+        <div class="filter_flex">
           <div v-for="item in SKILLS_DATA" :key=item.name>
             <input type="checkbox" name="level" :id="item.name" :value="item.name">
             <label :for="item.name">{{ item.name }}</label>
@@ -43,15 +50,23 @@ const durationsValue = ref('6')
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 21.6px */
-  letter-spacing: 0.18px;
+  letter-spacing: 0.01rem;
 
   .filters {
     margin-top: 4.222rem;  /* 76/18 */
   }
   .container_filter {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    @include flex-column;
+    gap: 1.667rem;
+  }
+  .filter_flex {
+    @include flex-column;
+    gap: 0.66rem;
+  }
+  .durations_flex {
+    input {
+      width: 10.5rem;
+    }
   }
 }
 
