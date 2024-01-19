@@ -3,10 +3,10 @@ export default defineNuxtConfig({
     modules: [['@nuxtjs/google-fonts', {
         families: {
             Mulish: {
-                wdht: [500, 600, 800]
+                wght: [500, 600, 800]
             },
             Montserrat: {
-                wdht: [600]
+                wght: [600]
             }
         }
     }], '@nuxt/image', 'nuxt-icon'],
